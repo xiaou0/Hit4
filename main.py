@@ -152,7 +152,7 @@ done=False
 while not done:
     for event in pygame.event.get():
         if event.type==QUIT:
-            dont=True()
+            done=True
     if score[0]>score[1]:
         screen.fill(color[1])
     elif score[1]>score[0]:
